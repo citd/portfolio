@@ -1,0 +1,60 @@
+body {
+  background-image: url(blackBackground2.png);
+  font-family: sans;
+  font-weight: bold;
+  color: antiquewhite;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 0%;
+  padding-right: 10%;
+}
+
+.myName {
+  color: rgb(254, 254, 254) ;
+  text-shadow: 20px 20px 3px black;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: white ;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: rgb(114, 224, 11) ;
+  font-weight: bold;
+  text-shadow: 10px 10px 3px black;
+}
+
+.theme {
+  color: black;
+  background-color: rgb(114, 224, 11);
+  border-radius: 25px;
+  border: none;
+}
+
+.theme:hover {
+  transform: scale(1.3);
+}
+
+.skill {
+  color: aliceblue;
+  text-size-adjust: 20%;
+}
+
+.skillsPage {
+  text-decoration: underline;
+  text-decoration-color: rgb(114, 224, 11);
+}
