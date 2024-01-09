@@ -1,100 +1,145 @@
-body {
-  background-image: url(blackBackground2.png);
-  font-family: sans;
-  font-weight: bold;
-  color: antiquewhite;
-
-}
-
-nav {
+ul {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-left: 0%;
-  padding-right: 10%;
-}
-
-.myName {
-  color: rgb(254, 254, 254) ;
-  text-shadow: 20px 20px 3px black;
-}
-
-nav ul li {
   list-style-type: none;
-  display: inline-block;
-  padding: 10px 20px;
+  gap: 40px;
+  font-size: 115%;
+  text-shadow: 0px 5px 10px rgb(7, 7, 7);
 }
 
-nav ul li a {
-  color: white ;
+#navigation {
+  position: relative;
+}
+
+.home:after, .about:after, .skills:after, .Portfolio:after {
+  content: '';
+  height: 2px;
+  width: 120%;
+  background-color: rgb(37, 109, 203);
+  left: -5px;
+  bottom: -3px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s ease-in;
+  pointer-events: none;
+}
+
+.home:hover:after, .about:hover:after, .skills:hover:after, .Portfolio:hover:after {
+  opacity: 1;
+}
+
+a {
   text-decoration: none;
-  font-weight: bold;
+  color: white;
 }
 
-nav ul li a:hover {
-  color: rgb(114, 224, 11) ;
-  font-weight: bold;
-  text-shadow: 10px 10px 3px black;
+body {
+  background-image: url("/images/workstation.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.theme {
-  color: black;
-  background-color: rgb(114, 224, 11);
-  border-radius: 25px;
-  border: none;
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 20vh;
+  align-content: center;
+  margin-top: 10%;
+  margin-left: 15%;
+  text-shadow: 10px 10px 10px rgb(7, 7, 7);
 }
 
-.theme:hover {
-  transform: scale(1.3);
-}
-
-.homepage {
-  text-decoration: underline;
-  text-decoration-color: rgb(164, 235, 9);
-  text-decoration-thickness: 3px;
-  text-shadow: 0px 0px 2px rgb(174, 255, 53);
-}
-
-.skill {
-  color: aliceblue;
-  text-size-adjust: 20%;
-}
-
-.skillsPage {
-  text-decoration: underline;
-  text-decoration-color: rgb(164, 235, 9);
-  text-decoration-thickness: 3px;
-  text-shadow: 0px 0px 2px rgb(174, 255, 53);
-}
-
-h2 {
-  color:  rgb(164, 235, 9);
-  font-size: 20px;
-  margin-left: 150px;
-  margin-top: 50px;
-}
-
-.tools{
-  background-color: black;
-  border-radius: 20px;
-  margin-top: 150px;
-}
-
-.heading {
-  color: rgb(164, 235, 9);
-  border-radius: 20px;
-  margin-top: 150px;
-}
-
-.img {
-  width: 250px;
-  aspect-ratio: 3/1;
+.name {
+  font-size: 300%;
+  display: flex;
   
 }
 
-.container {
-  display: flex;
-  column-gap: 30px;
+.surname {
+  margin-top: -3%;
+  margin-bottom: -3%;
+  font-size: 500%;
+  font-weight: bold;
+}
 
+.title {
+  font-size: 150%;
+  letter-spacing: 4px;
+}
+
+.buttons {
+  margin-left: 15%;
+  gap: 5%;
+}
+
+.resume, .portfolio {
+  border: dashed 1px rgb(197, 197, 199);
+  border-radius: 10px;
+  width: 6%;
+  text-align: center;
+  transition: transform 0.2s ease 0s;
+}
+
+.resume:hover, .portfolio:hover {
+  border: solid 1px rgb(197, 197, 199);
+  border-radius: 10px;
+  width: 6%;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgb(37, 109, 203);
+  background-color: rgb(37, 109, 203);
+  transform: translateY(-2px);
+}
+
+/* About page */
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(4, 4, 4, .4);
+  border-radius: 20px;
+  text-align: left;
+  overflow-wrap: normal;
+  width: 590px;
+  height: 320px;
+  margin: 170px 100px 5px 200px;
+  position: absolute;
+  font-size: 20px;
+  box-shadow: 0px 0px 20px rgb(37, 109, 203);
+}
+
+#passage {
+  letter-spacing: 1px;
+  line-height: px;
+}
+
+#loading {
+  padding: 100px 10px 10px 10px;
+  text-shadow: 5px 2px 29px rgb(37, 109, 203);
+}
+
+.tech {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 60vh;
+  align-content: center;
+  padding-top: 220px 200px;
+  width: 400px;
+  margin-top: 170px;
+  margin-left: 120px;
+  background-color: black;
+}
+
+.box {
+  /* justify-content: center; */
+  width: 150px;
+  height: 150px;
+  /* text-align: center; */
 }
