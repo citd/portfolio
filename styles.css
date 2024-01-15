@@ -43,7 +43,9 @@ body {
   height: 100%;
   background-repeat: no-repeat;
   color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  /* google fonts */
+  font-family: "Poppins", sans-serif;
 }
 
 .intro {
@@ -132,6 +134,10 @@ body {
 .div2 {
   width: 400px;
   margin: 75px 100px;
+  border-left: 2px rgb(37, 109, 203) solid;
+  height: 485px;
+  line-height: 80px;
+  margin-top: 100px;
 }
 
 .skillContainer {
@@ -145,11 +151,19 @@ body {
 }
 
 .soft-skills-heading {
+  font-size: 50px;
   color: rgb(37, 109, 203);
+  margin-bottom: -11px;
+  text-shadow: 0px 0px 20px rgb(59, 58, 58);
 }
 
 .soft-skills {
   font-size: 20px;
+}
+
+.soft-skills, .soft-skills-heading {
+  margin-left: 25px;
+  margin-top: 0px;
 }
 
 .skill-item {
@@ -178,4 +192,94 @@ body {
   overflow: hidden;
   height: 120px;
   width: 120px;
+}
+
+/* Contact me page */
+
+.contact-container {
+  height: 400px;
+  width: 1000px;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.contact-box {
+  background-color: aqua;
+  display: flex;
+}
+
+.contact-left {
+  /* background-color: white;
+  color: rgb(37, 109, 203);
+  border-radius: 30px 0px 0px 30px;
+  width: 550px; */
+
+  flex-basis: 60%;
+  padding: 40px 60px;
+  background-color: white;
+  color: blue;
+}
+
+.contact-right {
+  /* background-color: rgb(37, 109, 203);
+  border-right: 20px;
+  border-radius: 0px 30px 30px 0px;
+  width: 450px; */
+
+  flex-basis: 40%;
+  padding: 40px;
+  background-color: rgb(37, 109, 203);
+  color: white;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* .input-row, .input-group {
+  flex-basis: 45%;
+} */
+
+input {
+  width: 177px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid black;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(37, 109, 203);
+  border: none;
+  outline: none;
+  width: 100px;
+  color: white;
+  height: 40px;
+  border-radius: 33px;
+  margin-top: 22px;
+  box-shadow: 0px 5px 15px 0px rgb(28, 0, 181, 0.3);
+}
+
+tr td:first-child {
+  padding-right: 20px;
+}
+
+tr td:first-child {
+  padding-top: 20px;
+}
+
+.icons {
+  display: flex;
+  margin-top: 85px;
+  gap: 20px;
+  font-size: 25px;
 }
