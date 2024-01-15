@@ -1,4 +1,4 @@
-ul {
+.navbar, .buttons {
   display: flex;
   list-style-type: none;
   gap: 40px;
@@ -125,14 +125,31 @@ body {
   text-shadow: 5px 2px 29px rgb(37, 109, 203);
 }
 
+.div-container {
+  display: flex;
+}
+
+.div2 {
+  width: 400px;
+  margin: 75px 100px;
+}
+
 .skillContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 300px;
-  width: 1000px;
+  width: 500px;
   margin-top: 29px;
   /* background-color: brown; */
+}
+
+.soft-skills-heading {
+  color: rgb(37, 109, 203);
+}
+
+.soft-skills {
+  font-size: 20px;
 }
 
 .skill-item {
@@ -146,25 +163,19 @@ body {
 
 }
 
-.html {
+.html, .css, .js, .git, .nodejs, .jasmine {
   min-height: 100px;
-  
+  width: 130px;
 }
 
-.css {
-  min-height: 100px;
+#htmlimg {
+  height: 100px;
+  width: 100px;
+
 }
 
-.js {
-  min-height: 100px;
-}
-
-.git {
-  min-height: 100px;
-}
-.tdd {
-  min-height: 100px;
-}
-.nodejs {
-  min-height: 100px;
+.all-img {
+  overflow: hidden;
+  height: 120px;
+  width: 120px;
 }
