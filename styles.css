@@ -43,8 +43,6 @@ body {
   height: 100%;
   background-repeat: no-repeat;
   color: white;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
-  /* google fonts */
   font-family: "Poppins", sans-serif;
 }
 
@@ -101,7 +99,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* About page */
 .aboutMe {
   display: flex;
   flex-direction: column;
@@ -147,7 +144,6 @@ body {
   height: 300px;
   width: 500px;
   margin-top: 29px;
-  /* background-color: brown; */
 }
 
 .soft-skills-heading {
@@ -194,7 +190,6 @@ body {
   width: 120px;
 }
 
-/* Contact me page */
 
 .contact-container {
   height: 400px;
@@ -209,11 +204,6 @@ body {
 }
 
 .contact-left {
-  /* background-color: white;
-  color: rgb(37, 109, 203);
-  border-radius: 30px 0px 0px 30px;
-  width: 550px; */
-
   flex-basis: 60%;
   padding: 40px 60px;
   background-color: white;
@@ -221,11 +211,6 @@ body {
 }
 
 .contact-right {
-  /* background-color: rgb(37, 109, 203);
-  border-right: 20px;
-  border-radius: 0px 30px 30px 0px;
-  width: 450px; */
-
   flex-basis: 40%;
   padding: 40px;
   background-color: rgb(37, 109, 203);
@@ -237,10 +222,6 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-
-/* .input-row, .input-group {
-  flex-basis: 45%;
-} */
 
 input {
   width: 177px;
@@ -282,4 +263,14 @@ tr td:first-child {
   margin-top: 85px;
   gap: 20px;
   font-size: 25px;
+}
+
+.confirmation{
+  display: none;
+}
+
+.boxed {
+  width: 150px;
+  height: 150px;
+  background: pink;
 }
