@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.home:after, .about:after, .skills:after, .Portfolio:after {
+.home:after, .about:after, .skills:after, .Portfolio:after, .contact:after {
   content: '';
   height: 2px;
   width: 120%;
@@ -23,7 +23,7 @@
   pointer-events: none;
 }
 
-.home:hover:after, .about:hover:after, .skills:hover:after, .Portfolio:hover:after {
+.home:hover:after, .about:hover:after, .skills:hover:after, .Portfolio:hover:after, .contact:hover:after {
   opacity: 1;
 }
 
