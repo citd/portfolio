@@ -262,7 +262,7 @@ tr td:first-child {
 }
 
 tr td:first-child {
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .icons {
