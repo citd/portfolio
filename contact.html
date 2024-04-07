@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://kit.fontawesome.com/492556a180.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav>
-      <ul  class="navbar">
-        <li class="home" id="navigation"><a href="index.html">Home</a></li>
-        <li class="about" id="navigation"><a href="about.html">About</a></li>
-        <li class="skills" id="navigation"><a href="skills.html">Skills</a></li>
-        <li class="Portfolio" id="navigation"><a href="portfolio.html">Portfolio</a></li>
-        <li class="contact" id="navigation"><a href="#">Contact Me</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/492556a180.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li class="home"><a href="index.html">Home</a></li>
+        <li class="about"><a href="about.html">About</a></li>
+        <li class="skills"><a href="skills.html">Skills</a></li>
+        <li class="Portfolio"><a href="portfolio.html">Portfolio</a></li>
+        <li class="contact"><a href="#">Contact Me</a></li>
       </ul>
-  </nav>
+    </nav>
 
     <div class="contact-container">
       <h1>Get in touch</h1>
       <div class="contact-box">
         <div class="contact-left">
           <h3>Send your request</h3>
-  
+
           <form action="https://formspree.io/f/mayrqple" method="POST">
             <div class="input-row">
               <div class="input-group">
                 <label>Name</label>
-                <input type="text" name="name" placeholder="Mike Rosoft">
+                <input type="text" name="name" placeholder="Mike Rosoft" />
                 <label>phone</label>
-                <input type="text" placeholder="+27 12 345 6790">
+                <input type="text" placeholder="+27 12 345 6790" />
               </div>
             </div>
             <div class="input-row">
               <div class="input-group">
                 <label>email</label>
-                <input type="email" name="email" placeholder="mikerosoft@outlook.com">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="mikerosoft@outlook.com"
+                />
                 <label>Subject</label>
-                <input type="text" name="subject" placeholder="subject">
+                <input type="text" name="subject" placeholder="subject" />
               </div>
             </div>
             <label>Message</label>
-            <textarea rows="6" name="yourMessage"  placeholder="Write your message"></textarea>
+            <textarea
+              rows="6"
+              name="yourMessage"
+              placeholder="Write your message"
+            ></textarea>
             <button type="submit" id="Submit" target="_blank">SEND</button>
-            <p class="confirmation" id="confirmation">Your details have been submitted successfully.</p>
+            <p class="confirmation" id="confirmation">
+              Your details have been submitted successfully.
+            </p>
           </form>
         </div>
         <div class="contact-right">
@@ -63,51 +79,77 @@
             </tr>
             <tr>
               <td>Address</td>
-              <td>No. 3, 2nd street <br> Meyersdal, Alberton <br>Gauteng </td>
+              <td>
+                No. 3, 2nd street <br />
+                Meyersdal, Alberton <br />Gauteng
+              </td>
             </tr>
           </table>
-  
+
           <div class="icons">
-              <div><a href="https://github.com/citd" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #000000;"></i></a></div>
-              <div><a href="https://www.linkedin.com/in/mbongeni-sikhosana-1a78a1100/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #000000;"></i></a></div>
-              <div><a href="https://www.hackerrank.com/profile/mbongeni_sikhos1" target="_blank"><i class="fa-brands fa-hackerrank fa-xl" style="color: #000000;"></i></a></div>
+            <div>
+              <a href="https://github.com/citd" target="_blank"
+                ><i class="fa-brands fa-github fa-xl" style="color: #000000"></i
+              ></a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/mbongeni-sikhosana-1a78a1100/"
+                target="_blank"
+                ><i
+                  class="fa-brands fa-linkedin fa-xl"
+                  style="color: #000000"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <a
+                href="https://www.hackerrank.com/profile/mbongeni_sikhos1"
+                target="_blank"
+                ><i
+                  class="fa-brands fa-hackerrank fa-xl"
+                  style="color: #000000"
+                ></i
+              ></a>
+            </div>
           </div>
-  
         </div>
       </div>
     </div>
 
-  
-
-  <script>
-    function handleSubmit(event){
-      event.preventDefault();
-      const data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: queries.form.method,
-        body: data,
-        headers: {
-          Accept: "application/json"
-        }
-      }).then((response) => {
-        if(response.ok){
-          queries.status.innerHTML = "Thanks for your submission.";
-          queries.form.reset();
-        } else {
-          response.json().then((data) => {
-            if(Object.hasOwn(data, "errors")){
-              queries.status.innerHTML = data["errors"].map((error) => error["message"]).join(", ")
-            } else{
-              queries.status.innerHTML = "Oops! There was a problem with submitting your form.";
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: queries.form.method,
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              queries.status.innerHTML = "Thanks for your submission.";
+              queries.form.reset();
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, "errors")) {
+                  queries.status.innerHTML = data["errors"]
+                    .map((error) => error["message"])
+                    .join(", ");
+                } else {
+                  queries.status.innerHTML =
+                    "Oops! There was a problem with submitting your form.";
+                }
+              });
             }
           })
-        }
-      }).catch((error) => {
-        queries.status.innerHTML = "Oops! There was a problem with submitting your form.";
-      })
-    }
-  </script>
-  
-
-</body>
+          .catch((error) => {
+            queries.status.innerHTML =
+              "Oops! There was a problem with submitting your form.";
+          });
+      }
+    </script>
+  </body>
 </html>
