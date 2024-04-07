@@ -1,4 +1,5 @@
-.navbar, .buttons {
+.navbar,
+.buttons {
   display: flex;
   list-style-type: none;
   gap: 40px;
@@ -6,12 +7,20 @@
   text-shadow: 0px 5px 10px rgb(7, 7, 7);
 }
 
-.home, .about, .skills, .Portfolio, .contact {
+.home,
+.about,
+.skills,
+.Portfolio,
+.contact {
   position: relative;
 }
 
-.home:after, .about:after, .skills:after, .Portfolio:after, .contact:after {
-  content: '';
+.home:after,
+.about:after,
+.skills:after,
+.Portfolio:after,
+.contact:after {
+  content: "";
   height: 2px;
   width: 120%;
   background-color: rgb(37, 109, 203);
@@ -23,7 +32,11 @@
   pointer-events: none;
 }
 
-.home:hover:after, .about:hover:after, .skills:hover:after, .Portfolio:hover:after, .contact:hover:after {
+.home:hover:after,
+.about:hover:after,
+.skills:hover:after,
+.Portfolio:hover:after,
+.contact:hover:after {
   opacity: 1;
 }
 
@@ -60,7 +73,6 @@ body {
 .name {
   font-size: 300%;
   display: flex;
-  
 }
 
 .surname {
@@ -80,7 +92,8 @@ body {
   gap: 5%;
 }
 
-.resume, .portfolio {
+.resume,
+.portfolio {
   border: dashed 1px rgb(197, 197, 199);
   border-radius: 10px;
   width: 6%;
@@ -88,7 +101,8 @@ body {
   transition: transform 0.2s ease 0s;
 }
 
-.resume:hover, .portfolio:hover {
+.resume:hover,
+.portfolio:hover {
   border: solid 1px rgb(197, 197, 199);
   border-radius: 10px;
   width: 6%;
@@ -102,7 +116,7 @@ body {
 .aboutMe {
   display: flex;
   flex-direction: column;
-  background-color: rgba(4, 4, 4, .4);
+  background-color: rgba(4, 4, 4, 0.4);
   border-radius: 20px;
   text-align: left;
   overflow-wrap: normal;
@@ -164,7 +178,8 @@ body {
   font-size: 20px;
 }
 
-.soft-skills, .soft-skills-heading {
+.soft-skills,
+.soft-skills-heading {
   margin-left: 25px;
   margin-top: 0px;
 }
@@ -177,10 +192,14 @@ body {
   box-shadow: 0px 0px 20px rgb(37, 109, 203);
   border-radius: 20px;
   text-align: center;
-
 }
 
-.html, .css, .js, .git, .nodejs, .jasmine {
+.html,
+.css,
+.js,
+.git,
+.nodejs,
+.jasmine {
   min-height: 100px;
   width: 130px;
 }
@@ -188,7 +207,6 @@ body {
 #htmlimg {
   height: 100px;
   width: 100px;
-
 }
 
 .all-img {
@@ -196,7 +214,6 @@ body {
   height: 120px;
   width: 120px;
 }
-
 
 .contact-container {
   height: 400px;
@@ -272,7 +289,7 @@ tr td:first-child {
   font-size: 25px;
 }
 
-.confirmation{
+.confirmation {
   display: none;
 }
 
