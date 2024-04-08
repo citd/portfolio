@@ -101,6 +101,14 @@ body {
   transition: transform 0.2s ease 0s;
 }
 
+@media (max-width: 768px) {
+  .resume,
+  .portfolio {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
 .resume:hover,
 .portfolio:hover {
   border: solid 1px rgb(197, 197, 199);
