@@ -176,6 +176,21 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .contact-container {
+    padding-top: 150px;
+    margin-left: -300px;
+  }
+
+  .contact-right {
+    width: 640px;
+  }
+
+  .contact-right, .contact-left {
+    margin-left: -300px;
+  }
+}
+
+/* @media only screen and (max-width: 768px) {
   .navbar,
   .buttons {
     flex-direction: column;
@@ -231,7 +246,7 @@ body {
   .soft-skills {
     margin-left: 0;
   }
-}
+} */
 
 .resume:hover,
 .portfolio:hover {
