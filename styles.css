@@ -185,7 +185,8 @@ body {
     width: 640px;
   }
 
-  .contact-right, .contact-left {
+  .contact-right,
+  .contact-left {
     margin-left: -300px;
   }
 }
