@@ -179,13 +179,15 @@ body {
   .contact-container {
     padding-top: 150px;
     margin-left: -300px;
+    margin-top: 200px;
   }
 
   .contact-right {
     width: 640px;
   }
 
-  .contact-right, .contact-left {
+  .contact-right,
+  .contact-left {
     margin-left: -300px;
   }
 }
