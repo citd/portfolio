@@ -209,6 +209,8 @@ body {
   .icons {
     margin-top: 20px;
   }
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -340,6 +342,30 @@ body {
   overflow: hidden;
   height: 120px;
   width: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+  .html,
+  .css,
+  .js,
+  .git,
+  .nodejs,
+  .jasmine {
+    min-height: 100px;
+    width: 130px;
+  }
+
+  #htmlimg {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .all-img {
+    overflow: hidden;
+    height: 20px;
+    width: 20px;
+  }
+
 }
 
 .contact-container {
