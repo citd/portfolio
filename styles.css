@@ -138,6 +138,24 @@ body {
   .portfolio {
     width: 40%;
   }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(4, 4, 4, 0.4);
+    border-radius: 20px;
+    text-align: left;
+    overflow-wrap: normal;
+    width: 1px;
+    height: 325px;
+    /* margin: 170px 100px 5px 200px; */
+    margin-left: -20%;
+    position: absolute;
+    font-size: 1px;
+    box-shadow: 0px 0px 20px rgb(37, 109, 203);
+    padding: 0px 45px 45px 45px;
+  }
+
 }
 
 @media only screen and (max-width: 892px) {
