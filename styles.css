@@ -50,7 +50,7 @@ body {
   background-image: url("https://raw.githubusercontent.com/citd/portfolio/main/images/bongs.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: fit;
+  background-size: auto;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
@@ -101,19 +101,36 @@ body {
   transition: transform 0.2s ease 0s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 892px) {
   .intro {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: -5%;
+  }
+
+  .name {
+    font-size: 250%;
+    display: flex;
+  }
+  
+  .surname {
+    margin-top: -3%;
+    margin-bottom: -3%;
+    font-size: 400%;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 100%;
+    letter-spacing: 4px;
   }
 
   .buttons {
-    margin-left: auto;
+    margin-left: -4%;
     margin-right: auto;
     width: 80%;
-    display: flex;
+    display: block;
     justify-content: space-between;
   }
 
@@ -121,11 +138,30 @@ body {
   .portfolio {
     width: 40%;
   }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(4, 4, 4, 0.4);
+    border-radius: 20px;
+    text-align: left;
+    overflow-wrap: normal;
+    width: 1px;
+    height: 325px;
+    /* margin: 170px 100px 5px 200px; */
+    margin-left: -20%;
+    position: absolute;
+    font-size: 1px;
+    box-shadow: 0px 0px 20px rgb(37, 109, 203);
+    padding: 0px 45px 45px 45px;
+  }
+
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 892px) {
   body {
     overflow-x: hidden;
+    background-size: contain;
   }
 
   .contact-container {
@@ -173,9 +209,11 @@ body {
   .icons {
     margin-top: 20px;
   }
+
+
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 892px) {
   .contact-container {
     padding-top: 150px;
     margin-left: -300px;
