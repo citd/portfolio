@@ -137,11 +137,10 @@ body {
   .resume,
   .portfolio {
     width: 40%;
-    height: 20%;
+    height: 10%;
   }
 
   .aboutMe {
-    display: flex;
     flex-direction: column;
     background-color: rgba(4, 4, 4, 0.4);
     border-radius: 20px;
@@ -149,7 +148,6 @@ body {
     overflow-wrap: normal;
     width: 1px;
     height: 325px;
-    /* margin: 170px 100px 5px 200px; */
     margin-left: -20%;
     position: absolute;
     font-size: 1px;
