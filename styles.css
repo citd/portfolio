@@ -1,11 +1,29 @@
-.navbar,
+/* .navbar,
 .buttons {
   display: flex;
   list-style-type: none;
   gap: 40px;
   font-size: 115%;
   text-shadow: 0px 5px 10px rgb(7, 7, 7);
+} */
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  justify-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(48, 66, 88);
+  text-align: center;
 }
+
+/* .buttons li {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+} */
 
 .home,
 .about,
@@ -47,9 +65,8 @@ a {
 
 body {
   background-color: rgb(35, 37, 43);
-  background-image: url("https://raw.githubusercontent.com/citd/portfolio/main/images/bongs.png");
-  background-repeat: no-repeat;
-  background-position: right;
+  /* background-image: url("https://raw.githubusercontent.com/citd/portfolio/main/images/bongs.png"); */
+  background-position: center;
   background-size: auto;
   background-attachment: fixed;
   width: 100%;
@@ -65,8 +82,8 @@ body {
   width: 20%;
   height: 20vh;
   align-content: center;
-  margin-top: 10%;
-  margin-left: 15%;
+  margin-top: 8%;
+  margin-left: 10%;
   text-shadow: 10px 10px 10px rgb(7, 7, 7);
 }
 
@@ -87,21 +104,42 @@ body {
   letter-spacing: 4px;
 }
 
-.buttons {
-  margin-left: 15%;
-  gap: 5%;
+
+.buttons ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  justify-items: center;
+  list-style-type: none;
+  margin-top: 10%;
+  margin-left: 8%;
+  text-align: center;
+  font-size: 125%;
 }
 
 .resume,
 .portfolio {
-  border: dashed 1px rgb(197, 197, 199);
+  margin-top: 5%;
+  margin-right: auto;
+  border: none 1px rgb(197, 197, 199);
   border-radius: 10px;
   width: 6%;
   text-align: center;
   transition: transform 0.2s ease 0s;
 }
 
-@media (max-width: 892px) {
+
+@media (max-width: 480px) {
+  .navbar {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    font-size: 100%;
+    text-shadow: 0px 5px 10px rgb(7, 7, 7);
+    margin-left: -10%;
+    color: blue;
+  }
+
   .intro {
     width: 80%;
     margin-left: 3%;
@@ -137,6 +175,8 @@ body {
   .resume,
   .portfolio {
     width: 40%;
+    height: 20%;
+    margin-top: 15px;
   }
 
   .aboutMe {
@@ -148,7 +188,6 @@ body {
     overflow-wrap: normal;
     width: 1px;
     height: 325px;
-    /* margin: 170px 100px 5px 200px; */
     margin-left: -20%;
     position: absolute;
     font-size: 1px;
@@ -158,14 +197,11 @@ body {
 
 }
 
+
 @media only screen and (max-width: 892px) {
-  body {
-    overflow-x: hidden;
-    background-size: contain;
-  }
 
   .contact-container {
-    width: 100%;
+    width: 80%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -176,18 +212,19 @@ body {
   }
 
   .contact-box {
-    width: 90%;
-    max-width: 600px;
-    height: 100%;
+    /* width: 90%; */
+    /* max-width: 600px; */
+    /* height: 10%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 40%;
   }
 
   .contact-left,
   .contact-right {
-    width: 100%;
+    width: 70%;
     padding: 20px;
   }
 
@@ -209,10 +246,9 @@ body {
   .icons {
     margin-top: 20px;
   }
-
-
 }
 
+/*
 @media only screen and (max-width: 892px) {
   .contact-container {
     padding-top: 150px;
@@ -229,6 +265,7 @@ body {
     margin-left: -300px;
   }
 }
+*/
 
 .resume:hover,
 .portfolio:hover {
@@ -244,16 +281,17 @@ body {
 
 .aboutMe {
   display: flex;
-  flex-direction: column;
+  grid-template-columns: 1 / -1;
+  grid-template-rows: 1fr;
   background-color: rgba(4, 4, 4, 0.4);
   border-radius: 20px;
-  text-align: left;
-  overflow-wrap: normal;
-  width: 590px;
-  height: 325px;
-  margin: 170px 100px 5px 200px;
+  flex-wrap: wrap;
+  width: 40%;
+  height: min-content;
+  margin-top: 5%;
+  margin-left: 7%;
   position: absolute;
-  font-size: 22px;
+  font-size: 20px;
   box-shadow: 0px 0px 20px rgb(37, 109, 203);
   padding: 0px 45px 45px 45px;
 }
@@ -345,27 +383,27 @@ body {
 }
 
 .contact-container {
-  height: 400px;
-  width: 1000px;
-  margin-top: 100px;
-  margin-left: 50px;
+  /* height: 90%; */
+  width: 90%;
+  margin-top: 3%;
+  margin-left: 3%;
 }
 
 .contact-box {
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
 }
 
 .contact-left {
   flex-basis: 60%;
-  padding: 40px 60px;
+  padding: 1% 1%;
   background-color: white;
   color: blue;
 }
 
 .contact-right {
   flex-basis: 40%;
-  padding: 40px;
+  padding: 1% 1%;
   background-color: rgb(37, 109, 203);
   color: white;
 }
