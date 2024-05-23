@@ -200,7 +200,12 @@ body {
 
 @media only screen and (max-width: 892px) {
 
-  .contact-container {
+  .contact-container h1{
+    margin-bottom: -110px;
+    margin-top: 60%;
+  }
+
+  .contact-container{
     width: 80%;
     height: 100vh;
     display: flex;
@@ -245,6 +250,9 @@ body {
 
   .icons {
     margin-top: 20px;
+  }
+  td {
+    font-size: 13px;
   }
 }
 
@@ -395,6 +403,8 @@ body {
 }
 
 .contact-left {
+  border: 5px solid rgb(37, 109, 203);
+  border-radius: 10px 10px 0px 0px;
   flex-basis: 60%;
   padding: 1% 1%;
   background-color: white;
@@ -402,6 +412,8 @@ body {
 }
 
 .contact-right {
+  border: 5px solid rgb(37, 109, 203);
+  border-radius: 0px 0px 10px 10px;
   flex-basis: 40%;
   padding: 1% 1%;
   background-color: rgb(37, 109, 203);
