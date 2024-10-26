@@ -1,0 +1,41 @@
+body {
+  font-family: cursive;
+  background: linear-gradient(
+    9deg, rgba(46,44,45,1) 0%,
+    rgba(66,64,67,1) 100%
+  );
+}
+
+#addBtn, #resetBtn, .btns{
+  width: 7em;
+  height: 7em;
+  border: 7em;
+  border-radius: 50%;
+  outline: none;
+  border: 4px #090909 solid;
+  background: linear-gradient(
+    145deg, #171717, #444245
+  );
+  box-shadow: inset 2px 2px 0px #7d7c7e, inset -2px -2px 0px #1c1c1c;
+  color: #a6a6a6;
+  box-shadow: 11px 11px 22px #141414, -11px -11px 22px #525252;
+}
+
+#player, #action, #result {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+#action {
+  font-size: 3em;
+}
+
+#btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
