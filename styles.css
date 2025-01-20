@@ -49,10 +49,11 @@ a {
 }
 
 body {
+  margin: 0;
   background-color: rgb(35, 37, 43);
   /* background-image: url("https://raw.githubusercontent.com/citd/portfolio/main/images/bongs.png"); */
   background-position: center;
-  background-size: auto;
+  background-size: 30%;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
@@ -385,6 +386,11 @@ body {
 .jasmine {
   min-height: 100px;
   width: 130px;
+}
+
+.git {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #htmlimg {
